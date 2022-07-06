@@ -14,7 +14,7 @@ class Logger:
             os.mkdir(logger_folder)
 
     # region Simple Logs
-    def custom_log(self, logger_file, *args, **kwargs) -> int:
+    def custom_log(self, logger_file: str, *args, **kwargs) -> int:
         """
             Returns:
                 0: All ok
@@ -48,7 +48,7 @@ class Logger:
 
     # endregion
     # region Time Logs
-    def custom_log_time(self, logger_file, *args, **kwargs) -> int:
+    def custom_log_time(self, logger_file: str, *args, **kwargs) -> int:
         """
             Returns:
                 0: All ok
